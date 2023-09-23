@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Municipal Complaint Submission</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Municipal Complaint Submission</h1>
+    </header>
+
+    <main>
+        <form action="/submit-complaint" method="POST">
+            <label for="complaint_type">Complaint Type:</label>
+            <select id="complaint_type" name="complaint_type">
+                <option value="road">Road Maintenance</option>
+                <option value="garbage">Garbage Collection</option>
+                <option value="water">Water Supply</option>
+                <!-- Add more complaint types as needed -->
+            </select>
+
+            <label for="complaint_description">Description:</label>
+            <textarea id="complaint_description" name="complaint_description" rows="4" cols="50" required></textarea>
+
+            <label for="contact_email">Contact Email:</label>
+            <input type="email" id="contact_email" name="contact_email" required>
+
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Municipal Complaint Solution</p>
+    </footer>
+</body>
+</html>
